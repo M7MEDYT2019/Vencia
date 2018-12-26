@@ -12,7 +12,7 @@ const Canvas = require("canvas");
 
 const mmss = require("ms");
 
-const queue = [];
+const queue = new Map();
 
 const jimp = require("jimp");
 
