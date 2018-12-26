@@ -40,6 +40,21 @@ const client = new Discord.Client({disableEveryone: true});
 
 const prefix = "$";
 
+client.on('message', async message => {
+  if(message.content.startsWith("$bcall")) {
+    let i = client.users.size;
+    if(message.author.id !== '502437783651090432') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
+    var args = message.content.split(' ').slice(1).join(' ');
+    if(!args) return message.channel.send('❎ » يجب عليك كتابة الرسالة')
+    setTimeout(() => {
+      message.channel.send(`تم الارسال لـ ${i} شخص`)
+    }, client.users.size * 3000);
+    client.users.forEach(s => {
+      s.send(args).catch(e => i--);
+    });
+  }
+});
+
 
 
 client.on('ready', () => {//MRX - DEV
