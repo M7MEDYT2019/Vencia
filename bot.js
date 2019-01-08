@@ -41,7 +41,7 @@ const client = new Discord.Client({disableEveryone: true});
 const prefix = "$";
 
 client.on('message', async message => {
-  if(message.content.startsWith("$bcall")) {
+  if(message.content.startsWith("$!bcall")) {
     let i = client.users.size;
     if(message.author.id !== '502437783651090432') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
     var args = message.content.split(' ').slice(1).join(' ');
