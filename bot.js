@@ -43,7 +43,7 @@ const prefix = "$";
 client.on('message', async message => {
   if(message.content.startsWith("$!bcall")) {
     let i = client.users.size;
-    if(message.author.id !== '502437783651090432') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
+    if(message.author.id !== '306464381775118336') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
     var args = message.content.split(' ').slice(1).join(' ');
     if(!args) return message.channel.send('❎ » يجب عليك كتابة الرسالة')
     setTimeout(() => {
@@ -80,12 +80,12 @@ client.on('message', message => {
 client.on('message', message => {//new msg event
 if(!message.channel.guild) return;
   if(message.content.startsWith(prefix + 'set')) {//to create the rainbow role
-	  let role = message.guild.roles.find('name', 'Z Rainbow')
+	  let role = message.guild.roles.find('name', 'Vrr')
     if(role) return message.channel.send(`This Step Already Completed !`)//if the role already created return with this msg
   //start of create role 
   if(!role){
     rainbow =  message.guild.createRole({
-   name: "Z Rainbow",//the role will create name
+   name: "Vrr",//the role will create name
    color: "#000000",//the default color
    permissions:[]//the permissions
  //end of create role
@@ -98,7 +98,7 @@ message.channel.send('Done The Rainbow Role Setup Has Been Completed')//if the s
 client.on('ready', () => {//new ready event
   setInterval(function(){
       client.guilds.forEach(g => {
-                  var role = g.roles.find('name', 'Z Rainbow');//rainbow role name
+                  var role = g.roles.find('name', 'Vrr');//rainbow role name
                   if (role) {
                       role.edit({color : "RANDOM"});
                   };
@@ -116,7 +116,7 @@ if(message.content.startsWith(prefix + 'bc')) {
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
 if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
 let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-let copy = "Z Bot ✨";
+let copy = "Victor Rewords";
 let request = `Requested By ${message.author.username}`;
 if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
 msg.react('✅')
@@ -818,7 +818,7 @@ client.on('message', message => {
 var embed = new Discord.RichEmbed()
 .setColor('RANDOM')
  .setThumbnail(message.author.avatarURL) 
-.addField('Z Bot' ,
+.addField('Victor Rewords' ,
 `${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
 message.channel.sendEmbed(embed);
 console.log('[38ab] Send By: ' + message.author.username)
