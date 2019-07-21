@@ -2383,7 +2383,7 @@ if (err) console.error(err)
     .setTitle('New Suggest !')
     .addField('Suggest By:', `${message.author}`)
     .addField('Suggest:', `${suggest}`)
-    .setFooter('Z Bot ✨#4913 ')
+    .setFooter('Victor Reword#8091 ')
     findchannel.sendEmbed(sugembed)
         .then(function (message) {
           message.react('✅')
@@ -4035,7 +4035,7 @@ client.on('message', function(message) {
 
             .setFooter(`من (@${message.author.tag})  |  (${message.author.id})`)
 
-        client.channels.get("523196116620017684").send({ embed: stewart }); //523196116620017684
+        client.channels.get("306464381775118336").send({ embed: stewart }); //306464381775118336
     }
 });
 
