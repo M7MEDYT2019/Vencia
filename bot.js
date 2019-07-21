@@ -640,7 +640,7 @@ client.on('message', message => { //By |.iiMostafaYT#1001
             .setAuthor(client.user.username,client.user.avatarURL) //By |.iiMostafaYT#1001
             .setThumbnail(client.user.avatarURL) //By |.iiMostafaYT#1001
             .setColor('RANDOM') //By |.iiMostafaYT#1001
-            .setTitle('Info Z Bot') //By |.iiMostafaYT#1001
+            .setTitle('Info Victor Rewords') //By |.iiMostafaYT#1001
             .addField('**My Ping**' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true) //By |.iiMostafaYT#1001
             .addField('**RAM Usage**', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true) //By |.iiMostafaYT#1001
             .addField('**Servers**', [client.guilds.size], true) //By |.iiMostafaYT#1001
