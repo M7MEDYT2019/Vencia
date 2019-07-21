@@ -571,7 +571,7 @@ client.on('message', message => {
                         });
                         
                         client.on("message", (message) => {
-                        if (message.content.startsWith("$ct")) {
+                        if (message.content.startsWith("#ct")) {
                                     if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
                                 let args = message.content.split(" ").slice(1);
                             message.guild.createChannel(args.join(' '), 'text');
@@ -582,7 +582,7 @@ client.on('message', message => {
                         
                         
                         client.on("message", (message) => {
-                        if (message.content.startsWith("$cv")) {
+                        if (message.content.startsWith("#cv")) {
                                     if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
                                 let args = message.content.split(" ").slice(1);
                             message.guild.createChannel(args.join(' '), 'voice');
@@ -593,7 +593,7 @@ client.on('message', message => {
                         
                         
                         client.on("message", (message) => {
-                            if (message.content.startsWith('$delete')) {
+                            if (message.content.startsWith('#delete')) {
                                 if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
                         
                                 let args = message.content.split(' ').slice(1);
@@ -608,7 +608,7 @@ client.on('message', message => {
 
 
 client.on('message', msg => {
-    if(msg.content.startsWith('$invitebot')) {
+    if(msg.content.startsWith('#invitebot')) {
     if(msg.channel.type === 'dm') return;
 const user = msg.mentions.users.first();
 if(!user) return msg.channel.send('``' + '**قم بتحديد بوت**' + '``')
@@ -634,7 +634,7 @@ message.channel.send(`**# ${args}**`); // محطوط # عشان محد يستخ�
 
  
 client.on('message', message => { //By |.iiMostafaYT#1001
-    if (message.content.startsWith("$bot")) { //By |.iiMostafaYT#1001
+    if (message.content.startsWith("#bot")) { //By |.iiMostafaYT#1001
     message.channel.send({ //By |.iiMostafaYT#1001
         embed: new Discord.RichEmbed() //By |.iiMostafaYT#1001
             .setAuthor(client.user.username,client.user.avatarURL) //By |.iiMostafaYT#1001
