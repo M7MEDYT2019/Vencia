@@ -2902,27 +2902,27 @@ client.on('message',async message => {
 
   }
   if(message.content.startsWith(prefix + "clan")) {
-    if(message.content.split(' ')[0] !== `#{prefix}clan`) return;
+    if(message.content.split(' ')[0] !== `${prefix}clan`) return;
 
     if(!args[1] || args[1] && args[1] === 'help') {
   let embed = new Discord.RichEmbed()
   .setAuthor('الكلانات', message.author.avatarURL)
   .setDescription(`- \`${prefix}clan\`: نظام الكلانات هو نظام شبه مسلي ينمي التفاعل ويمكنك التحكم بالكلان تبعك بشكل كامل
-  - \`#{prefix}clan help\`: لأظهار رسالة الأوامر ( هذه الرسالة ) ء
-  - \`#{prefix}clan create\`: لأنشاء كلان بالأسم الذي تريده
-  - \`#{prefix}clan invite\`: لدعوة شخص ما للكلان تبعك
-  - \`#{prefix}clan join\`: للتقديم على دخول الكلان الذي تريده
-  - \`#{prefix}clan promote\`: لأعطاء شخص بالكلان صلاحيات الادمن ( يتطلب صلاحية الادمن ) ء
-  - \`#{prefix}clan demote\`: لأزالة صلاحية الادمن من عضو بالكلان ( صاحب الكلان فقط ) ء
-  - \`#{prefix}clan ownership\`: لنقل ملكيةالكلان
-  - \`#{prefix}clan leave\`: للخروج من الكلان الذي انت به
-  - \`#{prefix}clan kick\`: لطرد عضو من الكلان ( يتطلب صلاحية الادمن ) ء
-  - \`#{prefix}clan disband\`: لمسح الكلان من السستم ( صاحب الكلان فقط ) ء
-  - \`#{prefix}clan stats\`: لعرض معلومات الكلان تبعك
-  - \`#{prefix}clan list\`: يظهر لك اعضاء الكلان برسالة
-  - \`#{prefix}clan accept\`: لقبول شخص وجعل الشخص يدخل الكلان ( يتطلب صلاحية الادمن ) ء
-  - \`#{prefix}clan decline\`: لرفض شخص وعم جعل الشخص يدخل الكلان ( يطلب صلاحية الادمن ) ء
-  - \`#{prefix}clan room\`: لعمل روم شات او كتابي بأسم الكلان ( صاحب الكلان فقط ) ء`)
+  - \`${prefix}clan help\`: لأظهار رسالة الأوامر ( هذه الرسالة ) ء
+  - \`${prefix}clan create\`: لأنشاء كلان بالأسم الذي تريده
+  - \`${prefix}clan invite\`: لدعوة شخص ما للكلان تبعك
+  - \`${prefix}clan join\`: للتقديم على دخول الكلان الذي تريده
+  - \`${prefix}clan promote\`: لأعطاء شخص بالكلان صلاحيات الادمن ( يتطلب صلاحية الادمن ) ء
+  - \`${prefix}clan demote\`: لأزالة صلاحية الادمن من عضو بالكلان ( صاحب الكلان فقط ) ء
+  - \`${prefix}clan ownership\`: لنقل ملكيةالكلان
+  - \`${prefix}clan leave\`: للخروج من الكلان الذي انت به
+  - \`${prefix}clan kick\`: لطرد عضو من الكلان ( يتطلب صلاحية الادمن ) ء
+  - \`${prefix}clan disband\`: لمسح الكلان من السستم ( صاحب الكلان فقط ) ء
+  - \`${prefix}clan stats\`: لعرض معلومات الكلان تبعك
+  - \`${prefix}clan list\`: يظهر لك اعضاء الكلان برسالة
+  - \`${prefix}clan accept\`: لقبول شخص وجعل الشخص يدخل الكلان ( يتطلب صلاحية الادمن ) ء
+  - \`${prefix}clan decline\`: لرفض شخص وعم جعل الشخص يدخل الكلان ( يطلب صلاحية الادمن ) ء
+  - \`${prefix}clan room\`: لعمل روم شات او كتابي بأسم الكلان ( صاحب الكلان فقط ) ء`)
   .setFooter(message.author.username, message.author.avatarURL);
   message.channel.send(embed);
 }
