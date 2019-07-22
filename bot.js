@@ -2372,7 +2372,7 @@ if (err) console.error(err)
    client.on('message', message => {
  
  
-    if(message.content.startsWith(`${prefix}sug`)) {
+    if(message.content.startsWith(`#{prefix}sug`)) {
       if(!message.channel.guild) return message.reply('**This Command Only For Servers**');
       let suggest = message.content.split(" ").slice(1);
       if(!suggest) return message.reply(`**Please Type The Suggest**`)
