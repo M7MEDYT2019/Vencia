@@ -3777,7 +3777,6 @@ client.on('message', message => {
       
         command = command.slice(prefix.length);
       
-      
         let args = message.content.split(" ").slice(1);
 let embed = new Discord.RichEmbed()
 .setTitle(args)
