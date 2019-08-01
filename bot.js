@@ -40,7 +40,6 @@ const client = new Discord.Client({disableEveryone: true});
 
 const prefix = "#";
 
-const moment = require('moment')
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
