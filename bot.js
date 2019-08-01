@@ -4241,24 +4241,5 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 });
 
 
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '606608886211936465').setName("●");
-client.channels.find('id', '606608886211936465').setName("● V");
-client.channels.find('id', '606608886211936465').setName("● Vi");
-client.channels.find('id', '606608886211936465').setName("● Vic");
-client.channels.find('id', '606608886211936465').setName("● Vict");
-client.channels.find('id', '606608886211936465').setName("● Victo");
-client.channels.find('id', '606608886211936465').setName("● Victor");
-client.channels.find('id', '606608886211936465').setName("● Victor Re");
-client.channels.find('id', '606608886211936465').setName("● Victor Rew");
-client.channels.find('id', '606608886211936465').setName("● Victor Rewo");
-client.channels.find('id', '606608886211936465').setName("● Victor Rewar");
-client.channels.find('id', '606608886211936465').setName("● Victor Rewards");
-client.channels.find('id', '606608886211936465').setName("● Victor Rewards ●");	
-  }, 3000);
-});
-
   
-
 client.login(process.env.BOT_TOKEN);
