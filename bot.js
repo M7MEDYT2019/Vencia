@@ -1115,7 +1115,7 @@ client.on('message', message=> {
     if (message.author.bot) return;
     if (message.isMentioned(client.user))
     {
-    message.reply("Hey!\nTo Get Started\n`#help`\nBot Developer\n`💪M7MED👑#5514`\nMy Prefix:\n`#`");
+    message.reply("Hey!\nTo Get Started\n`#help`\nBot Developer\n` 😎M7MED🤩#0845 `\nMy Prefix:\n`#`");
     }
 });
 
